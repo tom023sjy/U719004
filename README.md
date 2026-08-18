@@ -39,3 +39,15 @@ by neo20131118:
 Reply:
 
 我并查集学的垃圾（其实也然）
+
+---
+(5)
+by ljz_AK_IOI：
+
+jc hex_233或tham
+
+---
+(6)
+Reply:
+
+nm
