@@ -12,7 +12,7 @@ for item in COOKIE_STR.split('; '):
         cookies[k] = v
 
 # 第一步：获取记录列表
-list_url = "https://www.luogu.com.cn/record/list?pid=U719004"
+list_url = "https://www.luogu.com/record/list?pid=U719004"
 resp = requests.get(list_url, headers=headers, cookies=cookies)
 html = resp.text
 pattern = r'window\._feInjection\s*=\s*JSON\.parse\(decodeURIComponent\("([^"]+)"\)\)'
@@ -33,7 +33,7 @@ for rec in records:
     print(f"提交ID: {rid}, 用户: {username}, 状态: {status}")
     
     # 访问单个提交详情页
-    detail_url = f"https://www.luogu.com.cn/record/{rid}"
+    detail_url = f"https://www.luogu.com/record/{rid}"
     detail_resp = requests.get(detail_url, headers=headers, cookies=cookies)
     detail_html = detail_resp.text
     
